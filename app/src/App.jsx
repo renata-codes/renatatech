@@ -40,13 +40,63 @@ export default function App() {
               <div>
                 📧 Contato
               </div>
+<div className="mt-8 flex flex-wrap gap-3 max-w-2xl">
+
+  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
+    Java
+  </span>
+
+  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
+    Python
+  </span>
+
+  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
+    React
+  </span>
+
+  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
+    JavaScript
+  </span>
+
+  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
+    APIs REST
+  </span>
+
+  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
+    SQL
+  </span>
+
+  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
+    PostgreSQL
+  </span>
+
+  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
+    Microsserviços
+  </span>
+
+  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
+    Git
+  </span>
+
+  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
+    GitHub
+  </span>
+
+  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
+    Arquitetura de Sistemas
+  </span>
+
+  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
+    Spring Boot
+  </span>
+
+</div>
 
             </div>
 
           </div>
 
-          <div className="flex justify-center lg:justify-end">
-
+          <div className="flex justify-center lg:justify-end self-start pt-4">
             <img
               src="/avatar.png"
               alt="Avatar Renata"
@@ -63,7 +113,6 @@ export default function App() {
           <h2 className="text-4xl font-bold mb-6">
             Sobre Mim
           </h2>
-
           <p className="text-slate-700 leading-8 max-w-4xl">
             Minha trajetória profissional começou na área comercial,
             desenvolvendo visão estratégica de negócios, relacionamento
