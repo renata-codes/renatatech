@@ -4,10 +4,10 @@ export default function App() {
       <div className="max-w-7xl mx-auto px-8">
 
         {/* HERO */}
-        <section className="grid lg:grid-cols-2 items-center min-h-[85vh]">
+        <section className="grid lg:grid-cols-2 gap-16 items-start py-16">
 
+          {/* ESQUERDA */}
           <div>
-
             <h1 className="text-7xl md:text-8xl font-bold leading-none">
               Renata
             </h1>
@@ -27,115 +27,120 @@ export default function App() {
               Sempre aprendendo, construindo e evoluindo.
             </p>
 
-            <div className="mt-10 space-y-3 text-lg">
+           <div className="mt-8 space-y-3 text-lg">
 
-              <div>
-                🔗 GitHub
-              </div>
+  <a
+    href="https://github.com/renata-codes"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block hover:text-blue-600 transition"
+  >
+    🔗 GitHub
+  </a>
 
-              <div>
-                💼 LinkedIn
-              </div>
+  <a
+    href="https://www.linkedin.com/in/renata-carvalho-442a25295/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block hover:text-blue-600 transition"
+  >
+    💼 LinkedIn
+  </a>
 
-              <div>
-                📧 Contato
-              </div>
-<div className="mt-8 flex flex-wrap gap-3 max-w-2xl">
-
-  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
-    Java
-  </span>
-
-  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
-    Python
-  </span>
-
-  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
-    React
-  </span>
-
-  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
-    JavaScript
-  </span>
-
-  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
-    APIs REST
-  </span>
-
-  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
-    SQL
-  </span>
-
-  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
-    PostgreSQL
-  </span>
-
-  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
-    Microsserviços
-  </span>
-
-  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
-    Git
-  </span>
-
-  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
-    GitHub
-  </span>
-
-  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
-    Arquitetura de Sistemas
-  </span>
-
-  <span className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm">
-    Spring Boot
-  </span>
+  <a
+    href="mailto:rehhcarvalho.santos@gmail.com"
+    className="block hover:text-blue-600 transition"
+  >
+    📧 Contato
+  📱 (11) 94570-0908
+</a>
 
 </div>
 
-            </div>
+            {/* TECNOLOGIAS */}
+            <div className="mt-10">
+              <h3 className="text-2xl font-bold mb-4">
+                Tecnologias
+              </h3>
 
+              <div className="flex flex-wrap gap-3">
+
+                {[
+                  "Java",
+                  "Spring Boot",
+                  "Python",
+                  "React",
+                  "JavaScript",
+                  "APIs REST",
+                  "SQL",
+                  "PostgreSQL",
+                  "Microsserviços",
+                  "Arquitetura de Sistemas",
+                  "Git",
+                  "GitHub",
+                ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="bg-white border border-slate-200 px-4 py-2 rounded-full font-bold shadow-sm"
+                  >
+                    {tech}
+                  </span>
+                ))}
+
+              </div>
+            </div>
           </div>
 
-          <div className="flex justify-center lg:justify-end self-start pt-4">
+          {/* DIREITA */}
+          <div className="flex flex-col items-center">
+
             <img
               src="/avatar.png"
               alt="Avatar Renata"
-              className="w-[650px] max-w-full"
+              className="w-[450px] max-w-full"
             />
 
+            <div className="mt-10 bg-white p-8 rounded-3xl shadow-sm">
+              <h2 className="text-3xl font-bold mb-4">
+                Sobre Mim
+              </h2>
+
+              <p className="text-slate-700 leading-8">
+                Minha trajetória profissional começou na área comercial,
+                trabalhando com seguros e produtos massificados , desenvolvendo visão estratégica de negócios,
+                relacionamento com clientes e resolução de problemas.
+
+                <br />
+            Atualmente estudo na Universidade Cruzeiro do Sul.
+
+                <br />
+                <br />
+
+                Também concluí formação em Arquitetura de Sistemas
+                pela FAT - Fundação de Apoio à Tecnologia.
+
+                <br />
+                <br />
+
+                Tenho interesse em Desenvolvimento Full Stack,
+                APIs REST, Microsserviços, Java, Python e React,
+                criando soluções digitais capazes de gerar impacto
+                para pessoas e empresas.
+              </p>
+            </div>
+
           </div>
-
-        </section>
-
-        {/* SOBRE */}
-        <section className="pb-16">
-
-          <h2 className="text-4xl font-bold mb-6">
-            Sobre Mim
-          </h2>
-          <p className="text-slate-700 leading-8 max-w-4xl">
-            Minha trajetória profissional começou na área comercial,
-            desenvolvendo visão estratégica de negócios, relacionamento
-            com clientes e resolução de problemas.
-
-            Atualmente sou graduanda na Universidade Cruzeiro do sul no curso de Ciencia da Computação ,
-            Também fiz um curso de Arquitetura de Sistemas na Fundação FAT de Apoio à Tecnologia.
-
-            Tenho interesse em Desenvolvimento Full Stack, APIs REST,
-            Microsserviços, Java, Python, React e criação de soluções
-            digitais capazes de gerar impacto para pessoas e empresas.
-          </p>
 
         </section>
 
         {/* PROJETOS */}
         <section className="pb-20">
 
-          <h2 className="text-4xl font-bold mb-8">
+          <h2 className="text-4xl font-bold text-center mb-8">
             Projetos
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
 
             <div className="bg-white p-8 rounded-3xl shadow-sm">
               <h3 className="text-2xl font-bold mb-3">
@@ -154,8 +159,8 @@ export default function App() {
               </h3>
 
               <p className="text-slate-600">
-                Projeto voltado à conexão entre pessoas, iniciativas e
-                oportunidades de impacto social.
+                Projeto voltado à conexão entre pessoas,
+                iniciativas e oportunidades de impacto social.
               </p>
             </div>
 
